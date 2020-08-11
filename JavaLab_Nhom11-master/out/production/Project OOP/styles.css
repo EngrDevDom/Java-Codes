@@ -1,0 +1,14 @@
+#root1{
+    -fx-background-color:#fff;-fx-padding:20px;-fx-background-radius:4px 4px 0px 0px;
+}
+#root{-fx-background-color:steelblue;}
+#data{
+    -fx-background-color:#f9f9f9;-fx-padding:7;-fx-background-radius:100px;
+}
+
+#add{
+    -fx-background-color:#6699ff;-fx-background-radius:100px;-fx-text-fill:#fff;-fx-padding:5px 20px 5px 20px;
+}
+#pop{
+    -fx-background-color:#f1f1f1;-fx-background-radius:100px;-fx-text-fill:#000;-fx-padding:5px 20px 5px 20px;
+}

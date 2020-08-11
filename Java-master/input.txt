@@ -1,0 +1,12 @@
+System.outprintln("My name is Souvik");
+//My name is Souvik.
+/*My 
+name 
+is 
+Souvik*/
+Hii
+/My
+/*
+hii*/
+//kkk
+

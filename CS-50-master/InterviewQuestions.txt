@@ -1,0 +1,86 @@
+# how many objects are created ?
+String arr[] = {"Paul", "Steven", "Jennifer", "Bart"};
+soln: total 9 objects created.
+      4 string objects, and their 4 underlying cha[]
+      1 string array i.e. arr
+
+public class UBSTest {
+	public static void main(String[] args) {
+		new UBSTest().f1(1);
+	}
+	
+	public void f1(Object o){
+		System.out.println("object");
+	}
+	
+	public void f1(Integer i){
+		System.out.println("Wrapper int");
+	}
+	
+	public void f1(int i){
+		System.out.println("int");
+	}
+}
+
+###########################################################################
+
+String test = "abc";
+	test.concat("sir");
+	String restut = test.length()==3 ? "you pass"+test : "you fail";
+	
+	System.out.println(test.length()+" "+restut);
+	
+###########################################################################
+	
+	List list = Arrays.asList("burger", "pizza", "burger", "donut");
+	Set s1 = new HashSet(list);
+	Set s2 = new TreeSet(list);
+	
+	System.out.println("#####:  "+s1.equals(s2)); //true
+	
+###########################################################################
+	
+	class A {
+	
+	{
+		System.out.println("a1");
+	}
+	
+	A(){
+		System.out.println("a");
+	}
+	
+	static {
+		System.out.println("a-s");
+	}
+}
+
+class B extends A {
+	
+	{
+		System.out.println("b1");
+	}
+	
+	B(){
+		System.out.println("b");
+	}
+	
+	static{
+		System.out.println("b-s");
+	}
+}
+	class MyMain extends B {
+	public static void main(String[] args) {
+		
+		System.out.println(" before ");
+		myMain obj = new B(); //case1	
+		B obj = new A();  //case 2
+		
+		System.out.println(" after ");
+	 }
+	}
+	o/p:
+	a-s
+	b-s
+	before
+	

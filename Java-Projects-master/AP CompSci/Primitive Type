@@ -1,0 +1,123 @@
+public class PrimitiveType {
+    public static void main(String[] args) {
+        sourMilk();  
+        // 1.1 Why Java Programming
+        System.out.println("Hello World!!!");
+        System.out.println("Hello Hello");
+        System.out.print("Hello ");
+        System.out.print("World");
+        System.out.println();
+
+        String name="Michael Crothers";
+        System.out.println(name);
+        System.out.println("Name: " +name);
+        //1.2 Variables and Data Types  
+        /* boolean
+         * int
+         * double
+         */
+        boolean isTired=false;
+        int lifeAnswer= 42;
+        double holtmannClassAvg=80.12;
+
+        System.out.println("The ultimate answer to life and everything is " + lifeAnswer);
+        System.out.println(isTired);
+        System.out.println("Mr. Holtmann had a class average of "+holtmannClassAvg);
+        //1.3 Declaring Variables
+        int x = 11, y;
+        System.out.println("x = "+x);
+        x=234;
+        System.out.println("Now is equal to "+x);
+        y = 41;
+        System.out.println(y);
+        /*Final 
+         * They are written in capital letters
+         * Final variables remain constant and never change
+         */ 
+        final int LIGHT_SPEED= 299792458;
+        System.out.println("The speed of light is " + LIGHT_SPEED);
+
+        //1.3 Expressions and Assignment Statements
+        int g = 10;
+        int r = 3, z = 5;
+        z = g + r;
+        System.out.println(g + " + " + r + " = " + z);
+
+        z = g - r;
+        System.out.println(g + " - " + r + " = " + z); 
+
+        z = g * r;
+        System.out.println(g + " * " + r + " = " + z);
+
+        z = g / r;
+        System.out.println(g + " / " + r + " = " + z);// No decimal is left over with ints
+
+        z = g % r;
+        System.out.println(g + " % " + r + " = " + z);
+
+        // Order of operations 
+        z = 10 + 5 * 10 - 10 / 5;
+        System.out.println("z: " +z);
+
+        // 1.4 Compound Assignment Operators
+        int speed = 1000;
+        speed += 10;
+        System.out.println("Speed: " + speed);
+
+        speed -= 10;
+        System.out.println("Speed: " + speed);
+
+        speed *= 10;
+        System.out.println("Speed: " + speed);
+
+        speed /= 10;
+        System.out.println("Speed: " + speed);
+
+        speed %= 10;
+        System.out.println("Speed: " + speed);
+
+        //Increment and Decrement
+        int index = 5;
+        index++;
+        System.out.println("index: " +index);
+
+        index--;
+        System.out.println("index: " +index);
+
+        //Prefix vs Postfix
+        System.out.println("index: " + index++);
+        System.out.println("index: " + index--);
+        System.out.println("index: " + ++index);
+        System.out.println("index: " + --index);
+
+        //1.5 Casting (Converting types)
+        //Implicit casting
+        int a = 22;
+        double b = a; // no information could be lost
+        System.out.println("a: " + a + " b: " +b);
+        //double c = 22;
+        // int d = c; Could lose information
+        //System.out.println("c: " + c + " d: " +d);
+
+        //Explicit casting
+        double c = 22.8;
+        int d = (int)c; // does not round. Takes away the decimal 
+        System.out.println("c: " + c + " d: " +d);
+        
+        //Rounding numbers
+        double e = 8.8;
+        int roundE = (int)(e + 0.5);
+        System.out.println("e: " + e + " roundE: " + roundE);
+        
+        double n = -8.8;
+        int roundn = (int)(n - 0.5);
+        System.out.println("n: " + n + " roundN: " + roundn);
+        
+        
+        
+    }
+
+    public static void sourMilk() {
+        System.out.println("I must apologize for acting stank and treating you this way \n'Cause I've been acting like sour milk all on the floor\nIt's your fault, you didn't shut the refrigerator\nMaybe that's the reason I've been acting so cold");
+    }
+}

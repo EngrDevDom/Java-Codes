@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="main.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <Button id="option" layoutX="79.0" layoutY="308.0" mnemonicParsing="false" onAction="#changeStackScreen" text="Stack" />
+        <Button id="option" layoutX="274.0" layoutY="308.0" mnemonicParsing="false" onAction="#changeQueueScreen" text="Queue" />
+        <Button id="option" layoutX="450.0" layoutY="308.0" mnemonicParsing="false" onAction="#changeHashScreen" styleClass="button1" text="HashTable" />
+      <Text fill="#5B5F97" layoutX="211.0" layoutY="130.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Đức Nam&#10;Nguyễn Xuân Vinh&#10;Đoàn Ngọc Chiến">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Text>
+    </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

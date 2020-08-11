@@ -1,0 +1,3 @@
+Difference between  removeDuplicate --> while( current != null)   and kthelement --> while(current.next != null)  because in removeDuplicate 
+function we are saving the data until the last node and then print it using void show , but in case of
+kthelement we are printing as soon as one change is done.

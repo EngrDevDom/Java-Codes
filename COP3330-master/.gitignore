@@ -1,0 +1,8 @@
+*.idea
+*.metadata
+*.iml
+*.class
+*.classpath
+*.project
+bin/
+out/

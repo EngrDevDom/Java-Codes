@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {       
+        int i = 0;
+        Scanner scan= new Scanner(System.in);
+        
+        while(scan.hasNext()) {
+            i++;          
+            String t = scan.nextLine();        
+            System.out.println(i+" "+t);
+
+        }
+    }
+}
